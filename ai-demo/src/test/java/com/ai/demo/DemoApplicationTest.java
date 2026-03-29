@@ -67,7 +67,7 @@ public class DemoApplicationTest {
 
         WanxImageModel wanxImageModel = WanxImageModel.builder()
                     .modelName("wanx2.1-t2i-plus") 
-                    .apiKey("sk-12f711f107544a5592a07c5ad1d4ef97")     
+                    .apiKey("xxx")     
                     .build();
         Response<Image> response = wanxImageModel.generate("美女");
         System.out.println(response.content().url());
@@ -101,7 +101,7 @@ public class DemoApplicationTest {
      */
     @Test
     public void aiMemory(){
-        QwenChatModel chatModel = QwenChatModel.builder().apiKey("sk-12f711f107544a5592a07c5ad1d4ef97")
+        QwenChatModel chatModel = QwenChatModel.builder().apiKey("xxxxx")
         .modelName("qwen-max").build();
 
         UserMessage userMessage = UserMessage.userMessage("我是莎莎");
@@ -122,7 +122,7 @@ public class DemoApplicationTest {
     public void aiMemory2(){
 
         MessageWindowChatMemory withMaxMessages = MessageWindowChatMemory.withMaxMessages(10);
-        QwenChatModel chatModel = QwenChatModel.builder().apiKey("sk-12f711f107544a5592a07c5ad1d4ef97")
+        QwenChatModel chatModel = QwenChatModel.builder().apiKey("xxxx")
         .modelName("qwen-max").build();
 
         Assistant assistant = AiServices.builder(Assistant.class).chatModel(chatModel).chatMemory(withMaxMessages).build();
