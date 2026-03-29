@@ -17,7 +17,7 @@ mybatis-plus:
 langchain4j:
   open-ai:
     chat-model:
-      api-key: sk-4128d766e967402c8b7a52eacea1d8cc
+      api-key: xxxxx
       base-url: https://api.deepseek.com/v1
       model-name: deepseek-reasoner
       log-requests: true
@@ -25,11 +25,11 @@ langchain4j:
   community:
     dashscope:
       chat-model:
-        api-key: sk-12f711f107544a5592a07c5ad1d4ef97
+        api-key: xxxxx
         model-name: qwen-max
       embedding-model:
-        api-key: sk-12f711f107544a5592a07c5ad1d4ef97
+        api-key: xxxx
         model-name: text-embedding-v3
       streaming-chat-model:
-        api-key: sk-12f711f107544a5592a07c5ad1d4ef97
+        api-key: xxxxxx
         model-name: qwen-plus
